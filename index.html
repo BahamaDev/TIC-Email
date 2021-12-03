@@ -1,106 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TIC Email</title>
 
     <style>
-      body {
-        margin: 0;
-        background-color: #cccccc;
-      }
-      table {
-        border-spacing: 0;
-      }
-      td {
-        padding: 0;
-      }
-      img {
-        border: 0;
-      }
+        body {
+            margin: 0;
+            background-color: #cccccc;
+        }
 
-      .wrapper {
-        width: 100%;
-        table-layout: fixed;
-        background-color: #cccccc;
-        padding-bottom: 50px;
-      }
+        table {
+            border-spacing: 0;
+        }
 
-      .main {
-        font-family: Arial, Helvetica, sans-serif;
-        color: #4a4a4a;
-        background-color: #ffffff;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 600px;
-        border-spacing: 0;
-      }
+        td {
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #cccccc;
+            padding-bottom: 50px;
+        }
+
+        .main {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #4a4a4a;
+            background-color: #ffffff;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-spacing: 0;
+        }
+
+        .two-columns {
+            text-align: center;
+            font-size: 0;
+        }
+
+        .two-columns .column {
+            width: 100%;
+            max-width: 300px;
+            display: inline-block;
+            vertical-align: top;
+            /* this will help the columns stack on smaller screens*/
+            text-align: center;
+        }
+
+        .banner-img {
+            max-width: 100%;
+        }
+
+        .button {
+            background-color: #289dcf;
+            color: white;
+            border: none;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            padding: 15px 20px;
+        }
+
+
+
+        .three-columns {
+            font-size: 0;
+            text-align: center;
+            padding: 25px 2px 20px;
+        }
+
+        .three-columns .column {
+
+            width: 100%;
+            max-width: 190px;
+            display: inline-block;
+            vertical-align: top;
+            /* this will help the columns stack on smaller screens*/
+
+        }
+
+
+        .three-columns .padding {
+            padding: 15px;
+
+        }
+
+        .three-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+
+        .two-columns.last {
+            padding: 35px 0;
+
+        }
+
+        .two-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+            text-align: left;
+
+        }
+
+        .two-columns .padding {
+            padding: 20px;
+        }
+
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <center class="wrapper">
-      <table class="main" width="100%">
-        <!-- Top Border Section -->
-        <tr>
-          <td height="8px" style="background-color: #289dcf"></td>
-        </tr>
+        <table class="main" width="100%">
+            <!-- Top Border Feature Section -->
+            <tr>
+                <td height="8px" style="background-color: #289dcf"></td>
+            </tr>
 
-        <!-- Header -->
+            <!-- Header -->
 
-        <tr>
-          <td>
-            <table width="100%">
-              <tr>
-                <td class="two-columns">
-                  <tr>
-                    <td>
-                      <a href="#">
-                        <i src="alt" ="header-image"></i>
-                      </a>
-                    </td>
-                  </tr>
+            <tr>
+                <td style="padding: 14px 0p 5px">
+                    <table width="100%">
+                        <tr>
+                            <td class="two-columns">
+                                <!-- first column -->
+                                <table class="column">
+                                    <tr>
+                                        <td style="padding: 0 62px 10px">
+                                            <a href="#">
+                                                <img src="img/insight.png" alt="Logo-image" width="180px"
+                                                    title="logo" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- second column -->
+                                <table class="column">
+                                    <tr>
+                                        <td style="padding: 10px 58px">
+                                            <a href="#">
+                                                <img src="img/circle-facebook.png" alt="facebook-icon"
+                                                    width="32px" /></a>
+                                            <a href="#">
+                                                <img src="img/circle-twitter.png" alt="twitter-icon" width="32px" /></a>
+                                            <a href="#">
+                                                <img src="img/circle-instagram.png" alt="insta-icon" width="32px" /></a>
+                                            <a href="#">
+                                                <img src="img/circle-linkedin.png" alt="facebook-icon"
+                                                    width="32px" /></a>
+                                            <a href="#">
+                                                <img src="img/circle-youtube.png" alt="facebook-icon"
+                                                    width="32px" /></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
                 </td>
-              </tr>
-            </table>
-          </td>
+            </tr>
+
+            <!-- Big Banner -->
+
+            <tr>
+                <td>
+                    <a href="#"><img src="img/banner.jpg" alt="Banner-Image" class="banner-img" /></a>
+                </td>
+            </tr>
+
+            <!-- Title, Text, Button -->
+
+            <tr>
+                <td style="padding: 5px 0 50px">
+                    <table width="100%">
+                        <tr>
+                            <td style="text-align: center; padding: 15px">
+                                <p style="font-size: 20px; font-weight: bold">
+                                    HTML Email Template
+                                    <strong style="color: #289dcf">Course</strong>
+                                </p>
+
+                                <p style="
+                      font-size: 17px;
+                      line-height: 23px;
+                      padding: 5px 2px 15px;
+                    " ;>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Asperiores qui repellat perspiciatis consequatur ducimus eum
+                                    animi quos commodi modi, voluptatem, iure atque iste
+                                    consequuntur nihil, dignissimos sit sed neque ipsam.
+                                </p>
+
+                                <a href="#" class="button">View Course</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Blue Line Separator-->
+            <tr>
+                <td height="3px" style="background-color: #289dcf"></td>
+            </tr>
+
+            <!-- Three Columns -->
+
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="three-columns">
+                                <!-- column1 -->
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="/img/ecommerce.jpg" width="100px"
+                                                                style="max-width: 110px; border-radius: 50px"
+                                                                alt="E-Commerce" title="e-comm-logo" /></a>
+                                                    </td>
+
+                                                <tr>
+                                                    <td>
+
+                                                        <p style="font-size: 18px; font-weight: bold; padding: 10px;">
+                                                            E-Commerce</p>
+
+                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                            Voluptate velit et quos!</p>
+
+                                                    </td>
+                                                </tr>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- column 2 -->
+
+
+                    <table class="column">
+                        <tr>
+                            <td class="padding">
+                                <table class="content">
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="/img/web-design.jpg" width="100px"
+                                                    style="max-width: 110px; border-radius: 50px" alt="Web-Design"
+                                                    title="web-design-logo" /></a>
+                                        </td>
+
+                                    <tr>
+                                        <td>
+
+                                            <p style="font-size: 18px; font-weight: bold; padding: 10px;">Web Design</p>
+
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate velit
+                                                et quos!</p>
+
+                                        </td>
+                                    </tr>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- column3 -->
+
+
+        <table class="column">
+            <tr>
+                <td class="padding">
+                    <table class="content">
+                        <tr>
+                            <td>
+                                <a href="#"><img src="/img/email-design.jpg" width="100px"
+                                        style="max-width: 110px; border-radius: 50px" alt="E-Mail-Desing"
+                                        title="e-mail-logo" /></a>
+                            </td>
+
+                        <tr>
+                            <td>
+
+                                <p style="font-size: 18px; font-weight: bold; padding: 10px;">E-Mail Design</p>
+
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate velit et quos!
+                                </p>
+
+                            </td>
+                        </tr>
+            </tr>
+        </table>
+        </td>
         </tr>
+        </table>
 
-        <!-- Title, Text, Button -->
-
-        <tr>
-          <td>
-            <table width="100%"></table>
-          </td>
+        </td>
         </tr>
-
-        <!-- Three Columns -->
-
-        <tr>
-          <td>
-            <table width="100%"></table>
-          </td>
+        </table>
+        </td>
         </tr>
 
         <!-- Blue Seperator Border -->
-
+        <tr>
+            <td height="3px" style="background-color: #289dcf"></td>
+        </tr>
         <!-- Two Columns -->
 
         <tr>
-          <td>
-            <table width="100%"></table>
-          </td>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td class="two-columns last">
+
+                            <table class="column">
+                                <tr>
+                                    <td class="padding">
+                                        <table class="content">
+                                            <tr>
+                                                <td><a href="#">
+
+                                                        <img src="img/palette.jpg" alt="Pallete-Image"
+                                                            style="width: 260px; max-width: 260px;">
+
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+
+
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                            <table class="column">
+                                <tr>
+                                    <td class="padding">
+                                        <table class="content">
+                                            <tr>
+                                                <td>
+                                                    <p style="font-size: 20px; font-weight: bold">Create Dope Designs
+                                                    </p>
+
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
+                                                        aperiam repellat, cupiditate magnam enim dolore.</p>
+
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+
+                                                    <a href="#" class="button">Read More</a>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+
+
+                                    </td>
+                                </tr>
+                            </table>
+
+
+
+
+                        </td>
+                    </tr>
+
+
+
+                </table>
+            </td>
         </tr>
 
         <!-- Footer -->
 
         <tr>
-          <td>
-            <table width="100%"></table>
-          </td>
+            <td style="background-color: gray; color: white">
+                <table width="100%">
+
+
+                    <tr>
+                        <td style="text-align: center; padding: 45px 20px;">
+
+                            <a href="#">
+                                <img src="img/insight-white.png" alt="Logo-image" width="160px" title="logo" />
+                            </a>
+                            <p style=" padding: 10px">Insight HTML Email</p>
+                            <p style=" padding: 10px">Street Address Here</p>
+
+
+                            <a href="#">
+                                <img src="img/white-facebook.png" alt="facebook-icon" width="32px" /></a>
+                            <a href="#">
+                                <img src="img/white-twitter.png" alt="twitter-icon" width="32px" /></a>
+                            <a href="#">
+                                <img src="img/white-instagram.png" alt="insta-icon" width="32px" /></a>
+                            <a href="#">
+                                <img src="img/white-linkedin.png" alt="facebook-icon" width="32px" /></a>
+                            <a href="#">
+                                <img src="img/white-youtube.png" alt="facebook-icon" width="32px" /></a>
+
+
+
+
+                            <p style=" padding: 10px">SUBSCRIBE</p>
+
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="10px" style="background-color: #289dcf"></td>
+                    </tr>
+
+                </table>
+            </td>
         </tr>
-      </table>
+        </table>
+
     </center>
-  </body>
+</body>
+
 </html>
